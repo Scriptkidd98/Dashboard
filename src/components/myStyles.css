@@ -140,6 +140,7 @@
     background-color: white;
     border-radius: 5px;
     padding: 10px;
+    margin-top: 12px;
 }
 .all-time {
     font-size: 13px;
@@ -194,4 +195,10 @@
     margin-bottom: 20px;
     border-radius: 4px;
     padding: 5px;
+}
+.stats-col {
+    padding-right: 0px !important;
+}
+.react-calendar__month-view__weekdays__weekday>abbr {
+    text-decoration: none !important;
 }
