@@ -113,7 +113,7 @@ function Dashboard() {
                                                 <p className='last-month'>15% more than yesterday</p>
                                             </div>
                                         </Col>
-                                        <Col md={4} lg={4} xs={12}>
+                                        <Col md={4} lg={4} xs={12} className="stats-col">
                                             <div className='one'>
                                                 <Row>
                                                     <Col lg={6} md={6} xs={6}>
