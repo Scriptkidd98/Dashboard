@@ -19,6 +19,11 @@
     padding-bottom: 32px;
     padding-left: 0px !important;
 }
+@media(max-width: 767px) {
+    .welcome-col {
+        padding-right: 0px !important;
+    }
+}
 .dashboard-body {
     background-color: #F5F8FA; /*#F5F8FA*/
     padding-left: 0px !important;
@@ -48,7 +53,8 @@
     border: none;
     color: white;
     border-radius: 5px;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 100% !important;
     font-size: 13px;
 }
@@ -212,6 +218,11 @@
     border-radius: 5px;
     padding: 15px;
     margin-top: 12px;
+}
+@media(min-width: 992px) {
+    .gender-stats {
+        margin-top: 0px !important;
+    }
 }
 .activities-div {
     background-color: white;
@@ -395,6 +406,9 @@
 .navigation-link-div {
     padding-top: 120px;
 }
+.real {
+    margin-right: 12px !important;
+}
 @media(min-width: 992px) {
     .real {
         display: none !important;
@@ -402,6 +416,21 @@
 }
 @media(max-width: 991px) {
     .faux {
+        display: none !important;
+    }
+}
+@media(min-width: 992px) {
+    .view-appointments {
+        padding-right: 0px !important;
+    }
+}
+@media(min-width: 992px) and (max-width: 1024px) {
+    .patients-col-expand {
+        padding-right: 0px !important;
+    }
+}
+@media(max-width: 991px) {
+    .dashboard-navigation {
         display: none !important;
     }
 }
