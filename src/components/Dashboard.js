@@ -87,7 +87,7 @@ function Dashboard() {
                                             <h3>Welcome, Dr. Fayemi David</h3>
                                             <p>You have 16 new appointments and there are currently 23,445 patients in the waiting room. Have a nice day at work!</p>
                                             <Row>
-                                                <Col lg={6}>
+                                                <Col lg={6} className='view-appointments'>
                                                     <button className="welcome-col-button">View your appointments</button>
                                                 </Col>
                                                 <Col lg={6}>
@@ -212,10 +212,10 @@ function Dashboard() {
                                 </div>
                                 <div className='statistics-div'>
                                     <Row>
-                                        <Col lg={8} md={8} xs={8}>
+                                        <Col lg={8} md={8} xs={7}>
                                             <p className='patients-by-gender'><span className='border-bottom-blue'>Appoi</span>ntment Statistics</p>
                                         </Col>
-                                        <Col lg={4} md={4} xs={4}>
+                                        <Col lg={4} md={4} xs={5}>
                                             <p className='patients-this'>Sort <span className='patients-month'>by month</span></p>
                                         </Col>
                                     </Row>
@@ -238,7 +238,7 @@ function Dashboard() {
                                                 </Col>
                                             </Row>
                                             <Row>
-                                                <Col lg={6} md={6} xs={6} className='patients-col'>
+                                                <Col lg={6} md={5} xs={5} className='patients-col patients-col-expand'>
                                                     <div className='patients-div'>
                                                         <p className='patients-number'>212,345</p>
                                                         <p className='patients-para'>Patients</p>
