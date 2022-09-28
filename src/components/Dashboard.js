@@ -15,6 +15,7 @@ import notes from './Images/notes.png';
 import chats from './Images/chats.png';
 import threedots from './Images/three-dots.png'
 import notification from './Images/notification.png';
+import settings from './Images/settings.png';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import moment from 'moment';
@@ -59,6 +60,16 @@ function Dashboard() {
                             <div className='navigation-link'>
                                 <div className='navigation-link-inner'>
                                     <img src={chats} alt="User" className='nav-image'></img><span>Chats</span>
+                                </div>
+                            </div>
+                            <div className='navigation-link navigation-link-div'>
+                                <div className='navigation-link-inner '>
+                                    <img src={person} alt="User" className='nav-image-profile'></img><span>My Profile</span>
+                                </div>
+                            </div>
+                            <div className='navigation-link'>
+                                <div className='navigation-link-inner'>
+                                    <img src={settings} alt="User" className='nav-image'></img><span>Settings</span>
                                 </div>
                             </div>
                         </div>
@@ -192,6 +203,16 @@ function Dashboard() {
                                                     <img src={threedots} alt='Menu' className='threedots'></img>    
                                                 </div>
                                             </div>
+                                        </Col>
+                                    </Row>
+                                </div>
+                                <div className='statistics-div'>
+                                    <Row>
+                                        <Col lg={8} md={8} xs={8}>
+                                            <p className='patients-by-gender'><span className='border-bottom-blue'>Appoi</span>ntment Statistics</p>
+                                        </Col>
+                                        <Col lg={4} md={4} xs={4}>
+                                            <p className='patients-this'>Sort <span className='patients-month'>by month</span></p>
                                         </Col>
                                     </Row>
                                 </div>

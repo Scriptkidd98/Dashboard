@@ -217,7 +217,6 @@
     border-radius: 5px;
     padding: 15px;
     margin-top: 12px;
-    background-color: white;
 }
 .patients-by-gender {
     font-style: normal;
@@ -341,4 +340,49 @@
     height: 25px;
     border-radius: 4px;
     padding: 5px;
+}
+.statistics-div {
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 12px;
+    margin-right: 0 !important;
+}
+@media(max-width: 991px) {
+    .statistics-div {
+        margin: 12px !important;
+    }
+    .welcome {
+        margin: 12px !important;
+    }
+    .stats-div {
+        margin: 12px !important;
+    }
+    .next-patients-div {
+        margin: 12px !important;
+    }
+    .calendar-div {
+        margin-left: 12px !important;
+    }
+    .gender-stats {
+        margin-left: 12px !important;
+    }
+    .activities-div {
+        margin-left: 12px !important;
+    }
+    .stats-col {
+        padding-right: 12px !important;
+    }
+    .welcome-col-button {
+        margin-top: 15px;
+    }
+}
+.nav-image-profile {
+    height: 25px;
+    width: 25px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+.navigation-link-div {
+    padding-top: 120px;
 }
