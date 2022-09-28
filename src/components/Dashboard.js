@@ -102,6 +102,10 @@ function Dashboard() {
                                         </Col>
                                     </Row>
                                 </div>
+                                <div className='calendar-div real'>
+                                    <Calendar onChange={onChange} value={value} className='react-calendar'/>
+                                    <p>Today's date is <b>{moment(value).format('MMMM Do YYYY')}</b></p>
+                                </div>
                                 <div className='stats-div'>
                                     <Row>
                                         <Col md={4} lg={4} xs={12}>
@@ -217,72 +221,77 @@ function Dashboard() {
                                     </Row>
                                 </div>
                             </Col>
-                            <Col md={6} lg={4} xs={12} className='calendar-col'>
-                                <div className='calendar-div'>
+                            <Col md={12} lg={4} xs={12} className='calendar-col'>
+                                <div className='calendar-div faux'>
                                     <Calendar onChange={onChange} value={value} className='react-calendar'/>
                                     <p>Today's date is <b>{moment(value).format('MMMM Do YYYY')}</b></p>
                                 </div>
-            
-                                <div className="gender-stats">
-                                    <Row>
-                                        <Col lg={7} md={7} xs={7} className='by-gender-col'>
-                                            <p className='patients-by-gender'><span className='border-bottom-blue'>Patie</span>nts  by Gender</p>
-                                        </Col>
-                                        <Col lg={5} md={5} xs={5} className='this-col'>
-                                            <p className='patients-this'>This <span className='patients-month'>month</span></p>
-                                        </Col>
-                                    </Row>
-                                    <Row>
-                                        <Col lg={6} md={6} xs={6} className='patients-col'>
-                                            <div className='patients-div'>
-                                                <p className='patients-number'>212,345</p>
-                                                <p className='patients-para'>Patients</p>
-                                            </div>
-                                        </Col>
-                                        <Col lg={6} md={6} xs={6} className='patients-col'>
-                                            <div className='genders-list'>
-                                                <p>Male</p>
-                                                <p>Female</p>
-                                                <p>Transgender</p>
-                                                <p>Other</p>
-                                            </div>
-                                        </Col>
-                                    </Row>
-                                </div>
-                                <div className='activities-div'>
-                                    <Row>
-                                        <Col md={10} lg={10} xs={10}>
-                                            <p className='patients-by-gender'><span className='border-bottom-blue'>Activ</span>ities</p>
-                                        </Col>
-                                        <Col md={2} lg={2} xs={2}>
-                                            <img src={notification} alt="User" className='notification-bell-image'></img>
-                                        </Col>
-                                    </Row>
-                                    <Row className='notification-each'>
-                                        <Col md={2} lg={2} xs={2}>
-                                            <img src={calendarimage} alt="Person" className='activities-icon'></img>
-                                        </Col>
-                                        <Col md={10} lg={10} xs={10}>
-                                            <span className='notification-span'>Yada yada yada</span>
-                                        </Col>
-                                    </Row>
-                                    <Row className='notification-each'>
-                                        <Col md={2} lg={2} xs={2}>
-                                            <img src={calendarimage} alt="Person" className='activities-icon'></img>
-                                        </Col>
-                                        <Col md={10} lg={10} xs={10}>
-                                            <span className='notification-span'>Yada yada yada</span>
-                                        </Col>
-                                    </Row>
-                                    <Row className='notification-each'>
-                                        <Col md={2} lg={2} xs={2}>
-                                            <img src={calendarimage} alt="Person" className='activities-icon'></img>
-                                        </Col>
-                                        <Col md={10} lg={10} xs={10}>
-                                            <span className='notification-span'>Yada yada yada</span>
-                                        </Col>
-                                    </Row>
-                                </div>
+                                <Row>
+                                    <Col md={6} lg={12} xs={12}>
+                                        <div className="gender-stats">
+                                            <Row>
+                                                <Col lg={7} md={7} xs={7} className='by-gender-col'>
+                                                    <p className='patients-by-gender'><span className='border-bottom-blue'>Patie</span>nts  by Gender</p>
+                                                </Col>
+                                                <Col lg={5} md={5} xs={5} className='this-col'>
+                                                    <p className='patients-this'>This <span className='patients-month'>month</span></p>
+                                                </Col>
+                                            </Row>
+                                            <Row>
+                                                <Col lg={6} md={6} xs={6} className='patients-col'>
+                                                    <div className='patients-div'>
+                                                        <p className='patients-number'>212,345</p>
+                                                        <p className='patients-para'>Patients</p>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={6} md={6} xs={6} className='patients-col'>
+                                                    <div className='genders-list'>
+                                                        <p>Male</p>
+                                                        <p>Female</p>
+                                                        <p>Transgender</p>
+                                                        <p>Other</p>
+                                                    </div>
+                                                </Col>
+                                            </Row>
+                                        </div>
+                                    </Col>
+                                    <Col md={6} lg={12} xs={12}>
+                                        <div className='activities-div'>
+                                            <Row>
+                                                <Col md={10} lg={10} xs={10}>
+                                                    <p className='patients-by-gender'><span className='border-bottom-blue'>Activ</span>ities</p>
+                                                </Col>
+                                                <Col md={2} lg={2} xs={2}>
+                                                    <img src={notification} alt="User" className='notification-bell-image'></img>
+                                                </Col>
+                                            </Row>
+                                            <Row className='notification-each'>
+                                                <Col md={2} lg={2} xs={2}>
+                                                    <img src={calendarimage} alt="Person" className='activities-icon'></img>
+                                                </Col>
+                                                <Col md={10} lg={10} xs={10}>
+                                                    <span className='notification-span'>Yada yada yada</span>
+                                                </Col>
+                                            </Row>
+                                            <Row className='notification-each'>
+                                                <Col md={2} lg={2} xs={2}>
+                                                    <img src={calendarimage} alt="Person" className='activities-icon'></img>
+                                                </Col>
+                                                <Col md={10} lg={10} xs={10}>
+                                                    <span className='notification-span'>Yada yada yada</span>
+                                                </Col>
+                                            </Row>
+                                            <Row className='notification-each'>
+                                                <Col md={2} lg={2} xs={2}>
+                                                    <img src={calendarimage} alt="Person" className='activities-icon'></img>
+                                                </Col>
+                                                <Col md={10} lg={10} xs={10}>
+                                                    <span className='notification-span'>Yada yada yada</span>
+                                                </Col>
+                                            </Row>
+                                        </div>
+                                    </Col>
+                                </Row>
                             </Col>
                         </Row>
                     </Col>
