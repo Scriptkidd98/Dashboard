@@ -65,14 +65,14 @@ function Dashboard() {
                     </Col>
                     <Col xs={12} md={12} lg={10} className="dashboard-body">
                         <div className='header'>
-                            <img src={notification} alt="User" className='header-notification'></img>
+                            <img src={notification} alt="Notification Icon" className='header-notification'></img>
                             <img src={person} alt="User" className='header-image'></img>
                         </div>
                         <Row className='dashboard-row'>
-                            <Col md={12} lg={8} className="dashboard-col">
+                            <Col md={12} lg={8} xs={12} className="dashboard-col">
                                 <div className="welcome">
                                     <Row>
-                                        <Col lg={8} md={8} className="welcome-col">
+                                        <Col lg={8} md={7} className="welcome-col">
                                             <h3>Welcome, Dr. Fayemi David</h3>
                                             <p>You have 16 new appointments and there are currently 23,445 patients in the waiting room. Have a nice day at work!</p>
                                             <Row>
@@ -84,8 +84,10 @@ function Dashboard() {
                                                 </Col>
                                             </Row>
                                         </Col>
-                                        <Col lg={4} md={4}>
-                                            <img src={person} alt="Person Vector" className='person-vector'></img>
+                                        <Col lg={4} md={5}>
+                                            <div className='person-div'>
+                                                <img src={person} alt="Person Vector" className='person-vector'></img>
+                                            </div>
                                         </Col>
                                     </Row>
                                 </div>
@@ -194,16 +196,16 @@ function Dashboard() {
                                     </Row>
                                 </div>
                             </Col>
-                            <Col md={6} lg={4} className='calendar-col'>
+                            <Col md={6} lg={4} xs={12} className='calendar-col'>
                                 <div className='calendar-div'>
                                     <Calendar onChange={onChange} value={value} className='react-calendar'/>
                                     <p>Today's date is <b>{moment(value).format('MMMM Do YYYY')}</b></p>
                                 </div>
+            
                                 <div className="gender-stats">
                                     <Row>
-                                        <Col lg={7} md={7} xs={7}>
+                                        <Col lg={7} md={7} xs={7} className='by-gender-col'>
                                             <p className='patients-by-gender'><span className='border-bottom-blue'>Patie</span>nts  by Gender</p>
-                                            
                                         </Col>
                                         <Col lg={5} md={5} xs={5} className='this-col'>
                                             <p className='patients-this'>This <span className='patients-month'>month</span></p>
@@ -223,6 +225,40 @@ function Dashboard() {
                                                 <p>Transgender</p>
                                                 <p>Other</p>
                                             </div>
+                                        </Col>
+                                    </Row>
+                                </div>
+                                <div className='activities-div'>
+                                    <Row>
+                                        <Col md={10} lg={10} xs={10}>
+                                            <p className='patients-by-gender'><span className='border-bottom-blue'>Activ</span>ities</p>
+                                        </Col>
+                                        <Col md={2} lg={2} xs={2}>
+                                            <img src={notification} alt="User" className='notification-bell-image'></img>
+                                        </Col>
+                                    </Row>
+                                    <Row className='notification-each'>
+                                        <Col md={2} lg={2} xs={2}>
+                                            <img src={calendarimage} alt="Person" className='activities-icon'></img>
+                                        </Col>
+                                        <Col md={10} lg={10} xs={10}>
+                                            <span className='notification-span'>Yada yada yada</span>
+                                        </Col>
+                                    </Row>
+                                    <Row className='notification-each'>
+                                        <Col md={2} lg={2} xs={2}>
+                                            <img src={calendarimage} alt="Person" className='activities-icon'></img>
+                                        </Col>
+                                        <Col md={10} lg={10} xs={10}>
+                                            <span className='notification-span'>Yada yada yada</span>
+                                        </Col>
+                                    </Row>
+                                    <Row className='notification-each'>
+                                        <Col md={2} lg={2} xs={2}>
+                                            <img src={calendarimage} alt="Person" className='activities-icon'></img>
+                                        </Col>
+                                        <Col md={10} lg={10} xs={10}>
+                                            <span className='notification-span'>Yada yada yada</span>
                                         </Col>
                                     </Row>
                                 </div>

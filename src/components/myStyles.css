@@ -86,8 +86,9 @@
 }
 .person-vector {
     height: 100% !important;
+    width: 100% !important;
     object-fit: contain !important;
-    overflow: none !important;
+    overflow: hidden !important;
 }
 .navigation-links {
     margin-top: 20px;
@@ -211,6 +212,13 @@
     padding: 15px;
     margin-top: 12px;
 }
+.activities-div {
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 12px;
+    background-color: white;
+}
 .patients-by-gender {
     font-style: normal;
     font-weight: 700;
@@ -305,4 +313,32 @@
 }
 .first-row {
     padding-top: 20px !important;
+}
+.person-div {
+    height: 100% !important;
+}
+.notification-image {
+    background-color: #FDD6A0;
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+    padding: 5px;
+}
+.notification-span {
+    font-size: smaller;
+    padding-left: 15px;
+}
+.notification-each {
+    padding-top: 20px;
+}
+.notification-bell-image {
+    width: 18px;
+    height: 20px;
+}
+.activities-icon {
+    background-color: #FDD6A0;
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+    padding: 5px;
 }
