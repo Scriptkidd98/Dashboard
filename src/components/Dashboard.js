@@ -7,6 +7,14 @@ import person from './Images/person.png';
 import statsperson from './Images/stats-person.png';
 import calendarimage from './Images/calendar.png';
 import clock from './Images/Vector.png';
+import waiting from './Images/waiting.png';
+import dashboard from './Images/dashboard.png';
+import schedule from './Images/schedule.png';
+import patients from './Images/patients.png';
+import notes from './Images/notes.png';
+import chats from './Images/chats.png';
+import threedots from './Images/three-dots.png'
+import notification from './Images/notification.png';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import moment from 'moment';
@@ -25,43 +33,43 @@ function Dashboard() {
                         <div className='navigation-links'>
                             <div className='navigation-link active'>
                                 <div className='navigation-link-inner'>
-                                    <img src={person} alt="User" className='nav-image'></img><span>Dashboard</span>
+                                    <img src={dashboard} alt="User" className='nav-image'></img><span>Dashboard</span>
                                 </div>
                             </div>
                             <div className='navigation-link'>
                                 <div className='navigation-link-inner'>
-                                    <img src={person} alt="User" className='nav-image'></img><span>Waiting Room</span>
+                                    <img src={waiting} alt="User" className='nav-image'></img><span>Waiting Room</span>
                                 </div>
                             </div>
                             <div className='navigation-link'>
                                 <div className='navigation-link-inner'>
-                                    <img src={person} alt="User" className='nav-image'></img><span>Schedule</span>
+                                    <img src={schedule} alt="User" className='nav-image'></img><span>Schedule</span>
                                 </div>
                             </div>
                             <div className='navigation-link'>
                                 <div className='navigation-link-inner'>
-                                    <img src={person} alt="User" className='nav-image'></img><span>My Patients</span>
+                                    <img src={patients} alt="User" className='nav-image'></img><span>My Patients</span>
                                 </div>
                             </div>
                             <div className='navigation-link'>
                                 <div className='navigation-link-inner'>
-                                    <img src={person} alt="User" className='nav-image'></img><span>Notes</span>
+                                    <img src={notes} alt="User" className='nav-image'></img><span>Notes</span>
                                 </div>
                             </div>
                             <div className='navigation-link'>
                                 <div className='navigation-link-inner'>
-                                    <img src={person} alt="User" className='nav-image'></img><span>Chats</span>
+                                    <img src={chats} alt="User" className='nav-image'></img><span>Chats</span>
                                 </div>
                             </div>
                         </div>
                     </Col>
                     <Col xs={12} md={12} lg={10} className="dashboard-body">
                         <div className='header'>
-                            <img src={person} alt="User" className='header-image'></img>
+                            <img src={notification} alt="User" className='header-notification'></img>
                             <img src={person} alt="User" className='header-image'></img>
                         </div>
                         <Row className='dashboard-row'>
-                            <Col md={8} lg={8} className="dashboard-col">
+                            <Col md={12} lg={8} className="dashboard-col">
                                 <div className="welcome">
                                     <Row>
                                         <Col lg={8} md={8} className="welcome-col">
@@ -130,11 +138,93 @@ function Dashboard() {
                                         </Col>
                                     </Row>
                                 </div>
+                                <div className='next-patients-div'>
+                                    <Row>
+                                        <Col lg={8} md={8} xs={8}>
+                                            <p className='patients-by-gender'><span className='border-bottom-blue'>Your</span> next patients</p>
+                                        </Col>
+                                        <Col lg={4} md={4} xs={4}>
+                                            <p className='patients-this'>This <span className='patients-month'>month</span></p>
+                                        </Col>
+                                    </Row>
+                                    <Row className='patients-row first-row'>
+                                        <Col xs={1} md={1} lg={1} className='patients-time'>
+                                            <span>09:00AM</span>
+                                        </Col>
+                                        <Col xs={11} md={11} lg={11} className='patients-info'>
+                                            <div className='patients-info-div'>
+                                                <div>
+                                                    <img src={person} alt="User" className='patients-image'></img><span className='patients-name'>Guy Hawkins</span>
+                                                </div>
+                                                <div className='threedots-div'>
+                                                    <img src={threedots} alt='Menu' className='threedots'></img>    
+                                                </div>
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                    <Row className='patients-row'>
+                                        <Col xs={1} md={1} lg={1} className='patients-time'>
+                                            <span>09:00AM</span>
+                                        </Col>
+                                        <Col xs={11} md={11} lg={11} className='patients-info'>
+                                            <div className='patients-info-div'>
+                                                <div>
+                                                    <img src={person} alt="User" className='patients-image'></img><span className='patients-name'>Guy Hawkins</span>
+                                                </div>
+                                                <div className='threedots-div'>
+                                                    <img src={threedots} alt='Menu' className='threedots'></img>    
+                                                </div>
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                    <Row className='patients-row'>
+                                        <Col xs={1} md={1} lg={1} className='patients-time'>
+                                            <span>09:00AM</span>
+                                        </Col>
+                                        <Col xs={11} md={11} lg={11} className='patients-info'>
+                                            <div className='patients-info-div'>
+                                                <div>
+                                                    <img src={person} alt="User" className='patients-image'></img><span className='patients-name'>Guy Hawkins</span>
+                                                </div>
+                                                <div className='threedots-div'>
+                                                    <img src={threedots} alt='Menu' className='threedots'></img>    
+                                                </div>
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                </div>
                             </Col>
-                            <Col md={4} lg={4} className='calendar-col'>
+                            <Col md={6} lg={4} className='calendar-col'>
                                 <div className='calendar-div'>
                                     <Calendar onChange={onChange} value={value} className='react-calendar'/>
                                     <p>Today's date is <b>{moment(value).format('MMMM Do YYYY')}</b></p>
+                                </div>
+                                <div className="gender-stats">
+                                    <Row>
+                                        <Col lg={7} md={7} xs={7}>
+                                            <p className='patients-by-gender'><span className='border-bottom-blue'>Patie</span>nts  by Gender</p>
+                                            
+                                        </Col>
+                                        <Col lg={5} md={5} xs={5} className='this-col'>
+                                            <p className='patients-this'>This <span className='patients-month'>month</span></p>
+                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <Col lg={6} md={6} xs={6} className='patients-col'>
+                                            <div className='patients-div'>
+                                                <p className='patients-number'>212,345</p>
+                                                <p className='patients-para'>Patients</p>
+                                            </div>
+                                        </Col>
+                                        <Col lg={6} md={6} xs={6} className='patients-col'>
+                                            <div className='genders-list'>
+                                                <p>Male</p>
+                                                <p>Female</p>
+                                                <p>Transgender</p>
+                                                <p>Other</p>
+                                            </div>
+                                        </Col>
+                                    </Row>
                                 </div>
                             </Col>
                         </Row>

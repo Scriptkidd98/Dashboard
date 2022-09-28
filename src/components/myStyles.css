@@ -129,9 +129,13 @@
     height: 25px;
     margin-left: 20px;
 }
-.nav-image {
-    width: 25px;
+.header-notification {
+    width: 20px;
     height: 25px;
+}
+.nav-image {
+    width: 17px;
+    height: 17px;
 }
 .stats-div {
     margin: 12px;
@@ -139,12 +143,11 @@
 .one {
     background-color: white;
     border-radius: 5px;
-    padding: 10px;
+    padding: 15px;
     margin-top: 12px;
 }
 .all-time {
     font-size: 13px;
-    color: white;
     font-weight: 500;
     text-align: right;
     color: black;
@@ -152,7 +155,7 @@
 .number {
     margin-bottom: 0px;
     font-weight: 800;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 31px;
     padding-bottom: 3px;
 }
@@ -201,4 +204,105 @@
 }
 .react-calendar__month-view__weekdays__weekday>abbr {
     text-decoration: none !important;
+}
+.gender-stats {
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 12px;
+}
+.patients-by-gender {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+}
+.patients-this {
+    color: #8692A6;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: right;
+}
+.patients-month {
+    color: #1565D8 !important;
+}
+.patients-div {
+    border-radius: 100%;
+    border: 3px solid;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: auto !important;
+    padding-right: auto !important;
+    text-align: center !important;
+    border-radius: 100%;
+    border-width: 4px;
+    border-bottom-color: #5A5EED;
+    border-left-color: #20CB85;
+    border-right-color: #00CFDE;
+    border-top-color: #FF8080;
+}
+.patients-number {
+    margin-bottom: 0px !important;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 31px;
+}
+.patients-para {
+    margin-bottom: 0px !important;
+    font-size: 15px;
+    color: grey;
+}
+.genders-list {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+}
+.next-patients-div {
+    margin: 12px;
+    margin-right: 0 !important;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+}
+.border-bottom-blue {
+    border-bottom: 3px solid #1565D8;
+    padding-bottom: 13px;
+}
+.patients-col {
+    padding-top: 30px;
+}
+.patients-time>span{
+    font-size: smaller;
+}
+.patients-info-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    gap: 10px;
+    background-color: #F9F9FA;
+    border-radius: 8px;
+    color: white;
+    margin-left: 20px;
+}
+.patients-image {
+    height: 25px;
+    width: 25px;
+    border: 2px solid #8692A6;
+    border-radius: 50px;
+}
+.threedots {
+    height: 3px;
+    width: 15px;
+}
+.patients-name {
+    padding-left: 15px;
+    color: #8692A6;
+}
+.patients-row {
+    padding-top: 12px;
+}
+.first-row {
+    padding-top: 20px !important;
 }
