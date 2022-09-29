@@ -530,6 +530,12 @@
     margin-right: 10px;
     margin-bottom: 1px;
 }
+.button-arrow {
+    height: 12px;
+    width: 15px;
+    margin-left: 10px;
+    margin-bottom: 1px;
+}
 .body-div {
     margin: 12px;
 }

@@ -19,6 +19,7 @@ import settings from './Images/settings.png';
 import arrowdown from './Images/arrow-down.png';
 import arrowdownblue from './Images/arrow-down-blue.png';
 import arrowright from './Images/arrow-right.png';
+import buttonarrowright from './Images/button-arrow.png';
 import bluebell from './Images/blue-bell.png';
 import graph from './Images/graph.png';
 import male from './Images/male.png';
@@ -102,7 +103,7 @@ function Dashboard() {
                                                     <button className="welcome-col-button"><img src={eye} alt='Eye Icon' className='eye'></img>View your appointments</button>
                                                 </Col>
                                                 <Col lg={6}>
-                                                    <button className="welcome-col-button">Go to waiting room</button>
+                                                    <button className="welcome-col-button">Go to waiting room<img src={buttonarrowright} alt='Eye Icon' className='button-arrow'></img></button>
                                                 </Col>
                                             </Row>
                                         </Col>
