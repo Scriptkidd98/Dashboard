@@ -16,6 +16,8 @@ import chats from './Images/chats.png';
 import threedots from './Images/three-dots.png'
 import notification from './Images/notification.png';
 import settings from './Images/settings.png';
+import arrowdown from './Images/arrow-down.png';
+import arrowright from './Images/arrow-right.png';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import moment from 'moment';
@@ -115,7 +117,7 @@ function Dashboard() {
                                                         <img src={statsperson} alt="Person" className='schedule-image'></img>
                                                     </Col>
                                                     <Col lg={6} md={6} xs={6}>
-                                                        <p className='all-time'>All time</p>
+                                                        <p className='all-time'>All time <img src={arrowdown} alt="Arrow" className='arrow-down'></img></p>
                                                     </Col>
                                                 </Row>
                                                 <p className='number'>12,345</p>
@@ -130,7 +132,7 @@ function Dashboard() {
                                                         <img src={calendarimage} alt="Person" className='appointment-image'></img>
                                                     </Col>
                                                     <Col lg={6} md={6} xs={6}>
-                                                        <p className='all-time'>Today</p>
+                                                        <p className='all-time'>Today <img src={arrowdown} alt="Arrow" className='arrow-down'></img></p>
                                                     </Col>
                                                 </Row>
                                                 <p className='number'>25</p>
@@ -145,7 +147,7 @@ function Dashboard() {
                                                         <img src={clock} alt="Person" className='waiting-image'></img>
                                                     </Col>
                                                     <Col lg={6} md={6} xs={6}>
-                                                        <p className='all-time'>Today</p>
+                                                        <p className='all-time'>Today <img src={arrowdown} alt="Arrow" className='arrow-down'></img></p>
                                                     </Col>
                                                 </Row>
                                                 <p className='number'>21,045</p>
@@ -161,7 +163,7 @@ function Dashboard() {
                                             <p className='patients-by-gender'><span className='border-bottom-blue'>Your</span> next patients</p>
                                         </Col>
                                         <Col lg={4} md={4} xs={4}>
-                                            <p className='patients-this'>This <span className='patients-month'>month</span></p>
+                                            <p className='patients-this'><span className='patients-month'>View All</span> <img src={arrowright} alt="Arrow" className='arrow-right'></img></p>
                                         </Col>
                                     </Row>
                                     <Row className='patients-row first-row'>
