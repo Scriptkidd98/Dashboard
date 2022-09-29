@@ -96,7 +96,7 @@ function Dashboard() {
                                     <Row>
                                         <Col lg={8} md={7} className="welcome-col">
                                             <h3>Welcome, Dr. Fayemi David</h3>
-                                            <p>You have 16 new appointments and there are currently 23,445 <br></br>patients in the waiting room. Have a nice day at work!</p>
+                                            <p>You have 16 new appointments and there are currently 23,445 patients in the waiting room. Have a nice day at work!</p>
                                             <Row>
                                                 <Col lg={6} className='view-appointments'>
                                                     <button className="welcome-col-button"><img src={eye} alt='Eye Icon' className='eye'></img>View your appointments</button>
