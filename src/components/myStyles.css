@@ -127,6 +127,10 @@
     text-align: left;
     margin-bottom: 20px;
 }
+.navigation-link:hover {
+    background-color: #1D2B4F;
+    border-left: 3px solid white;
+}
 .navigation-link-inner {
     width: 80%;
     margin-left: 5%;
@@ -433,7 +437,7 @@
     border-radius: 50px;
 }
 .navigation-link-div {
-    padding-top: 120px;
+    margin-top: 120px;
 }
 .real {
     margin-right: 12px !important;
@@ -638,4 +642,8 @@
     .schedule-patients-this {
         font-size: 12px !important;
     }
+}
+.navigation-link-inner {
+    text-decoration: none !important;
+    color: white !important;
 }
