@@ -13,11 +13,19 @@ import schedule from './Images/schedule.png';
 import patients from './Images/patients.png';
 import notes from './Images/notes.png';
 import chats from './Images/chats.png';
-import threedots from './Images/three-dots.png'
+import threedots from './Images/three-dots.png';
 import notification from './Images/notification.png';
 import settings from './Images/settings.png';
 import arrowdown from './Images/arrow-down.png';
+import arrowdownblue from './Images/arrow-down-blue.png';
 import arrowright from './Images/arrow-right.png';
+import bluebell from './Images/blue-bell.png';
+import graph from './Images/graph.png';
+import male from './Images/male.png';
+import female from './Images/female.png';
+import trans from './Images/trans.png';
+import others from './Images/others.png';
+import eye from './Images/eye.png';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import moment from 'moment';
@@ -87,10 +95,10 @@ function Dashboard() {
                                     <Row>
                                         <Col lg={8} md={7} className="welcome-col">
                                             <h3>Welcome, Dr. Fayemi David</h3>
-                                            <p>You have 16 new appointments and there are currently 23,445 patients in the waiting room. Have a nice day at work!</p>
+                                            <p>You have 16 new appointments and there are currently 23,445 <br></br>patients in the waiting room. Have a nice day at work!</p>
                                             <Row>
                                                 <Col lg={6} className='view-appointments'>
-                                                    <button className="welcome-col-button">View your appointments</button>
+                                                    <button className="welcome-col-button"><img src={eye} alt='Eye Icon' className='eye'></img>View your appointments</button>
                                                 </Col>
                                                 <Col lg={6}>
                                                     <button className="welcome-col-button">Go to waiting room</button>
@@ -110,13 +118,13 @@ function Dashboard() {
                                 </div>
                                 <div className='stats-div'>
                                     <Row>
-                                        <Col md={4} lg={4} xs={12}>
+                                        <Col md={4} lg={4} xs={12} className="stats-col-one">
                                             <div className='one'>
                                                 <Row>
-                                                    <Col lg={6} md={6} xs={6}>
+                                                    <Col lg={5} md={5} xs={6}>
                                                         <img src={statsperson} alt="Person" className='schedule-image'></img>
                                                     </Col>
-                                                    <Col lg={6} md={6} xs={6}>
+                                                    <Col lg={7} md={7} xs={6}>
                                                         <p className='all-time'>All time <img src={arrowdown} alt="Arrow" className='arrow-down'></img></p>
                                                     </Col>
                                                 </Row>
@@ -125,7 +133,7 @@ function Dashboard() {
                                                 <p className='last-month'>5% less than last month</p>
                                             </div>
                                         </Col>
-                                        <Col md={4} lg={4} xs={12}>
+                                        <Col md={4} lg={4} xs={12} className="stats-col-two">
                                             <div className='one'>
                                                 <Row>
                                                     <Col lg={6} md={6} xs={6}>
@@ -167,10 +175,10 @@ function Dashboard() {
                                         </Col>
                                     </Row>
                                     <Row className='patients-row first-row'>
-                                        <Col xs={1} md={1} lg={1} className='patients-time'>
+                                        <Col xs={2} md={1} lg={1} className='patients-time'>
                                             <span>09:00AM</span>
                                         </Col>
-                                        <Col xs={11} md={11} lg={11} className='patients-info'>
+                                        <Col xs={10} md={11} lg={11} className='patients-info'>
                                             <div className='patients-info-div'>
                                                 <div>
                                                     <img src={person} alt="User" className='patients-image'></img><span className='patients-name'>Guy Hawkins</span>
@@ -182,10 +190,10 @@ function Dashboard() {
                                         </Col>
                                     </Row>
                                     <Row className='patients-row'>
-                                        <Col xs={1} md={1} lg={1} className='patients-time'>
+                                        <Col xs={2} md={1} lg={1} className='patients-time'>
                                             <span>09:00AM</span>
                                         </Col>
-                                        <Col xs={11} md={11} lg={11} className='patients-info'>
+                                        <Col xs={10} md={11} lg={11} className='patients-info'>
                                             <div className='patients-info-div'>
                                                 <div>
                                                     <img src={person} alt="User" className='patients-image'></img><span className='patients-name'>Guy Hawkins</span>
@@ -197,10 +205,10 @@ function Dashboard() {
                                         </Col>
                                     </Row>
                                     <Row className='patients-row'>
-                                        <Col xs={1} md={1} lg={1} className='patients-time'>
+                                        <Col xs={2} md={1} lg={1} className='patients-time'>
                                             <span>09:00AM</span>
                                         </Col>
-                                        <Col xs={11} md={11} lg={11} className='patients-info'>
+                                        <Col xs={10} md={11} lg={11} className='patients-info'>
                                             <div className='patients-info-div'>
                                                 <div>
                                                     <img src={person} alt="User" className='patients-image'></img><span className='patients-name'>Guy Hawkins</span>
@@ -218,9 +226,12 @@ function Dashboard() {
                                             <p className='patients-by-gender'><span className='border-bottom-blue'>Appoi</span>ntment Statistics</p>
                                         </Col>
                                         <Col lg={4} md={4} xs={5}>
-                                            <p className='patients-this'>Sort <span className='patients-month'>by month</span></p>
+                                            <p className='patients-this'>Show <span className='patients-month'>by month</span> <img src={arrowdownblue} alt="Arrow" className='arrow-down'></img></p>
                                         </Col>
                                     </Row>
+                                    <div>
+                                        <img src={graph} alt='Graph' className='graph'></img>
+                                    </div>
                                 </div>
                             </Col>
                             <Col md={12} lg={4} xs={12} className='calendar-col'>
@@ -236,7 +247,7 @@ function Dashboard() {
                                                     <p className='patients-by-gender'><span className='border-bottom-blue'>Patie</span>nts  by Gender</p>
                                                 </Col>
                                                 <Col lg={5} md={5} xs={5} className='this-col'>
-                                                    <p className='patients-this'>This <span className='patients-month'>month</span></p>
+                                                    <p className='patients-this'>This <span className='patients-month'>month</span> <img src={arrowdownblue} alt="Arrow" className='arrow-down'></img></p>
                                                 </Col>
                                             </Row>
                                             <Row>
@@ -248,10 +259,10 @@ function Dashboard() {
                                                 </Col>
                                                 <Col lg={6} md={6} xs={6} className='patients-col'>
                                                     <div className='genders-list'>
-                                                        <p>Male</p>
-                                                        <p>Female</p>
-                                                        <p>Transgender</p>
-                                                        <p>Other</p>
+                                                        <p><img src={male} alt='Male' className='gender-color'></img>Male</p>
+                                                        <p><img src={female} alt='Male' className='gender-color'></img>Female</p>
+                                                        <p><img src={trans} alt='Male' className='gender-color'></img>Transgender</p>
+                                                        <p><img src={others} alt='Male' className='gender-color'></img>Other</p>
                                                     </div>
                                                 </Col>
                                             </Row>
@@ -263,8 +274,8 @@ function Dashboard() {
                                                 <Col md={10} lg={10} xs={10}>
                                                     <p className='patients-by-gender'><span className='border-bottom-blue'>Activ</span>ities</p>
                                                 </Col>
-                                                <Col md={2} lg={2} xs={2}>
-                                                    <img src={notification} alt="User" className='notification-bell-image'></img>
+                                                <Col md={2} lg={2} xs={2} className='notification-bell-col'>
+                                                    <img src={bluebell} alt="User" className='notification-bell-image'></img>
                                                 </Col>
                                             </Row>
                                             <Row className='notification-each'>
@@ -272,7 +283,7 @@ function Dashboard() {
                                                     <img src={calendarimage} alt="Person" className='activities-icon'></img>
                                                 </Col>
                                                 <Col md={10} lg={10} xs={10}>
-                                                    <span className='notification-span'>Yada yada yada</span>
+                                                    <span className='notification-span'>There are 3 new ready reports for <span className='notification-name'>Tosin Odubela</span></span>
                                                 </Col>
                                             </Row>
                                             <Row className='notification-each'>
@@ -280,7 +291,7 @@ function Dashboard() {
                                                     <img src={calendarimage} alt="Person" className='activities-icon'></img>
                                                 </Col>
                                                 <Col md={10} lg={10} xs={10}>
-                                                    <span className='notification-span'>Yada yada yada</span>
+                                                    <span className='notification-span'>There are 3 new ready reports for <span className='notification-name'>Tosin Odubela</span></span>
                                                 </Col>
                                             </Row>
                                             <Row className='notification-each'>
@@ -288,7 +299,7 @@ function Dashboard() {
                                                     <img src={calendarimage} alt="Person" className='activities-icon'></img>
                                                 </Col>
                                                 <Col md={10} lg={10} xs={10}>
-                                                    <span className='notification-span'>Yada yada yada</span>
+                                                    <span className='notification-span'>There are 3 new ready reports for <span className='notification-name'>Tosin Odubela</span></span>
                                                 </Col>
                                             </Row>
                                         </div>
