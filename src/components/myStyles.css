@@ -434,3 +434,14 @@
         display: none !important;
     }
 }
+.arrow-down {
+    height: 8px;
+    width: 12px;
+    margin-left: 5px;
+}
+.arrow-right {
+    height: 9px;
+    width: 12px;
+    margin-left: 5px;
+    vertical-align: 0px !important;
+}
