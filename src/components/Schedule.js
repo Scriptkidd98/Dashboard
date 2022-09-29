@@ -19,6 +19,7 @@ import arrowdownblue from './Images/arrow-down-blue.png';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import moment from 'moment';
+import {Link} from 'react-router-dom';
 
 
 function Schedule() {
@@ -32,9 +33,9 @@ function Schedule() {
                         <div className='logo-div'><img src={logo} alt="Logo"></img><span className='logo-text'>Health Lite</span></div>
                         <div className='navigation-links'>
                             <div className='navigation-link'>
-                                <div className='navigation-link-inner'>
+                                <Link to='/' className='navigation-link-inner'>
                                     <img src={dashboard} alt="User" className='nav-image'></img><span>Dashboard</span>
-                                </div>
+                                </Link>
                             </div>
                             <div className='navigation-link'>
                                 <div className='navigation-link-inner'>
