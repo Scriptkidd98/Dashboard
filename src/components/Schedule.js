@@ -76,6 +76,7 @@ function Schedule() {
                     </Col>
                     <Col xs={12} md={12} lg={10} className="dashboard-body">
                         <div className='header'>
+                        <Link to='/' className='header-link'>Dashboard</Link>
                             <img src={notification} alt="Notification Icon" className='header-notification'></img>
                             <img src={person} alt="User" className='header-image'></img>
                         </div>
@@ -83,7 +84,7 @@ function Schedule() {
                             <Row>
                                 <Col lg={8} md={7} className="welcome-col">
                                     <h3>Your Schedule</h3>
-                                    <p>All client consultations are available here. You can intiate <br></br>consultations for each client's procedure.</p>
+                                    <p>All client consultations are available here. You can intiate consultations for each client's procedure.</p>
                                     <div className='schedule-button-div'>
                                         <button className="welcome-col-button"><img src={eye} alt='Eye Icon' className='eye'></img>View your appointments</button>
                                     </div>
