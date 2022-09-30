@@ -88,6 +88,7 @@ function Dashboard() {
                     </Col>
                     <Col xs={12} md={12} lg={10} className="dashboard-body">
                         <div className='header'>
+                            <Link to='/Schedule' className='header-link'>Schedule</Link>
                             <img src={notification} alt="Notification Icon" className='header-notification'></img>
                             <img src={person} alt="User" className='header-image'></img>
                         </div>
@@ -271,7 +272,7 @@ function Dashboard() {
                                         </div>
                                     </Col>
                                     <Col md={6} lg={12} xs={12}>
-                                        <div className='activities-div'>
+                                        <div className='activities-div dashboard-activities-div'>
                                             <Row>
                                                 <Col md={10} lg={10} xs={10}>
                                                     <p className='patients-by-gender'><span className='border-bottom-blue'>Activ</span>ities</p>
