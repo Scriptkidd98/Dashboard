@@ -485,12 +485,6 @@
     margin-left: 5px;
     vertical-align: 0px !important;
 }
-.stats-col-one {
-    padding-right: 0px !important;
-}
-.stats-col-two {
-    padding-right: 0px !important;
-}
 .graph {
     width: 100% !important;
     margin-top: 20px;
@@ -692,4 +686,12 @@
 .header-link {
     text-decoration: none !important;
     padding-right: 75px !important;
+}
+@media(min-width: 768px) {
+    .stats-col-one {
+        padding-right: 0px !important;
+    }
+    .stats-col-two {
+        padding-right: 0px !important;
+    }
 }
