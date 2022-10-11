@@ -1,5 +1,10 @@
+@font-face {
+    font-family: Inter;
+    src: url(./Inter/static/Inter-Regular.ttf);
+  }
 .body {
     overflow: hidden !important;
+    font-family: Inter !important;
 }
 .dashboard-navigation {
     background-color: #1565D8;
