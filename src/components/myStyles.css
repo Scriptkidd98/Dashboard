@@ -4,7 +4,7 @@
   }
 .body {
     overflow: hidden !important;
-    font-family: Inter !important;
+    font-family: "Inter", sans-serif;
 }
 .dashboard-navigation {
     background-color: #1565D8;
