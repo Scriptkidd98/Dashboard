@@ -79,6 +79,12 @@ function Dashboard() {
               grid: {
                 display: false,
                 drawBorder: false,
+              },
+              ticks: {
+                font: {
+                    weight: 500,
+                    size: 13
+                }
               }
             },
             y: {
@@ -86,6 +92,12 @@ function Dashboard() {
                 display: false,
                 drawBorder: false,
               },
+              ticks: {
+                font: {
+                    weight: 400,
+                    size: 13
+                }
+              }
             },
         },
         layout: {
