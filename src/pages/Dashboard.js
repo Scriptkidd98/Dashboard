@@ -78,11 +78,13 @@ function Dashboard() {
             x: {
               grid: {
                 display: false,
-              },
+                drawBorder: false,
+              }
             },
             y: {
               grid: {
-                display: false
+                display: false,
+                drawBorder: false,
               },
             },
         },
