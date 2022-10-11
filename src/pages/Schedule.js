@@ -18,7 +18,7 @@ function Schedule() {
             <Container fluid>
                 <Row>
                     <Navigation/>
-                    <Col xs={12} md={12} lg={10} className="dashboard-body">
+                    <Col xs={12} md={12} lg={10} className="schedule-body">
                         <Header/>
                         <div className="welcome-schedule">
                             <Row>
@@ -56,26 +56,26 @@ function Schedule() {
                                                     </Col>
                                                 </Row>
                                                 <Row className='notification-each'>
-                                                    <Col md={2} lg={2} xs={2}>
+                                                    <Col md={2} lg={2} xs={2} className='notification-image-col'>
                                                         <img src={calendarimage} alt="Person" className='activities-icon'></img>
                                                     </Col>
-                                                    <Col md={10} lg={10} xs={10}>
+                                                    <Col md={10} lg={10} xs={10} className='notification-text-col'>
                                                         <span className='notification-span'>There are 3 new ready reports for <span className='notification-name'>Tosin Odubela</span></span>
                                                     </Col>
                                                 </Row>
                                                 <Row className='notification-each'>
-                                                    <Col md={2} lg={2} xs={2}>
+                                                    <Col md={2} lg={2} xs={2} className='notification-image-col'>
                                                         <img src={calendarimage} alt="Person" className='activities-icon'></img>
                                                     </Col>
-                                                    <Col md={10} lg={10} xs={10}>
+                                                    <Col md={10} lg={10} xs={10} className='notification-text-col'>
                                                         <span className='notification-span'>There are 3 new ready reports for <span className='notification-name'>Tosin Odubela</span></span>
                                                     </Col>
                                                 </Row>
                                                 <Row className='notification-each'>
-                                                    <Col md={2} lg={2} xs={2}>
+                                                    <Col md={2} lg={2} xs={2} className='notification-image-col'>
                                                         <img src={calendarimage} alt="Person" className='activities-icon'></img>
                                                     </Col>
-                                                    <Col md={10} lg={10} xs={10}>
+                                                    <Col md={10} lg={10} xs={10} className='notification-text-col'>
                                                         <span className='notification-span'>There are 3 new ready reports for <span className='notification-name'>Tosin Odubela</span></span>
                                                     </Col>
                                                 </Row>
