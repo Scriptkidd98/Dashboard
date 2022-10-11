@@ -1,6 +1,6 @@
 import React from "react";
-import Dashboard from "./components/Dashboard";
-import Schedule from "./components/Schedule";
+import Dashboard from "./pages/Dashboard";
+import Schedule from "./pages/Schedule";
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App() {
