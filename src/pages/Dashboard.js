@@ -301,7 +301,7 @@ function Dashboard() {
                                                             startAngle={0}
                                                             viewBoxSize={[100, 100]}
                                                         >
-                                                            <g id="UrTavla">
+                                                            <g>
                                                                 <text x="50%" y="45%" textAnchor="middle" stroke="#1D2B4F" strokeWidth="0.4px" dy=".3em" className='pie-number'>200,000</text>
                                                                 <text x="50%" y="60%" textAnchor="middle" stroke="#8692A6" strokeWidth="0.3px" dy=".8em" className='pie-patient'>Patients</text>
                                                             </g>
